@@ -9,6 +9,8 @@ services:
     envVars:
       - key: ZEROCLAW_ALLOW_PUBLIC_BIND
         value: "true"
+      - key: ZEROCLAW_GATEWAY_HOST
+        value: "0.0.0.0"
       - key: ZEROCLAW_GATEWAY_PORT
         value: "10000"
       - key: PORT
