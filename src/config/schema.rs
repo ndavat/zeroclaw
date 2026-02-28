@@ -6735,6 +6735,16 @@ impl Config {
             self.gateway.allow_public_bind = val == "1" || val.eq_ignore_ascii_case("true");
         }
 
+        // Require pairing: ZEROCLAW_REQUIRE_PAIRING
+        if let Ok(val) = std::env::var("ZEROCLAW_REQUIRE_PAIRING") {
+            self.gateway.require_pairing = val == "1" || val.eq_ignore_ascii_case("true");
+        }
+
+        // Trust forwarded headers: ZEROCLAW_TRUST_FORWARDED_HEADERS
+        if let Ok(val) = std::env::var("ZEROCLAW_TRUST_FORWARDED_HEADERS") {
+            self.gateway.trust_forwarded_headers = val == "1" || val.eq_ignore_ascii_case("true");
+        }
+
         // Temperature: ZEROCLAW_TEMPERATURE
         if let Ok(temp_str) = std::env::var("ZEROCLAW_TEMPERATURE") {
             if let Ok(temp) = temp_str.parse::<f64>() {

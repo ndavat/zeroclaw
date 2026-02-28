@@ -78,7 +78,6 @@ default_temperature = 0.7
 port = 42617
 host = "0.0.0.0"
 allow_public_bind = true
-trust_forwarded_headers = true
 EOF
 RUN chown -R 65534:65534 /zeroclaw-data
 
