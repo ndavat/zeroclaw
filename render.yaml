@@ -6,7 +6,6 @@ services:
     plan: free
     healthCheckPath: /health
     dockerfilePath: ./Dockerfile
-    dockerfileTarget: release
     envVars:
       - key: ZEROCLAW_ALLOW_PUBLIC_BIND
         value: "true"
