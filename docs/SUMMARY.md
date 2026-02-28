@@ -59,6 +59,7 @@ Last refreshed: **February 25, 2026**.
 - [release-process.md](release-process.md)
 - [troubleshooting.md](troubleshooting.md)
 - [network-deployment.md](network-deployment.md)
+- [render-deployment.md](operations/render-deployment.md)
 - [mattermost-setup.md](mattermost-setup.md)
 
 ### 4) Security Design & Proposals
